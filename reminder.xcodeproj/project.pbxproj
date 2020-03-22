@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		A37843632427471E0026BFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843622427471E0026BFAD /* AppDelegate.swift */; };
 		A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843642427471E0026BFAD /* SceneDelegate.swift */; };
-		A37843672427471E0026BFAD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843662427471E0026BFAD /* ViewController.swift */; };
 		A378436A2427471E0026BFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37843682427471E0026BFAD /* Main.storyboard */; };
 		A378436C242747210026BFAD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A378436B242747210026BFAD /* Assets.xcassets */; };
 		A378436F242747210026BFAD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A378436D242747210026BFAD /* LaunchScreen.storyboard */; };
+		A378437D242750A10026BFAD /* DBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A378437B242750A10026BFAD /* DBModel.xcdatamodeld */; };
+		A37843802427544A0026BFAD /* EntityWithId+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378437E2427544A0026BFAD /* EntityWithId+CoreDataClass.swift */; };
+		A37843812427544A0026BFAD /* EntityWithId+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378437F2427544A0026BFAD /* EntityWithId+CoreDataProperties.swift */; };
+		A3784388242755EE0026BFAD /* RemindListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3784387242755EE0026BFAD /* RemindListViewController.swift */; };
+		A378438B24275BBA0026BFAD /* RemindListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378438A24275BBA0026BFAD /* RemindListViewModel.swift */; };
+		A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378438E242766D70026BFAD /* BaseDataProvider.swift */; };
+		A37843912427688A0026BFAD /* RemidDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843902427688A0026BFAD /* RemidDataProvider.swift */; };
+		A3784393242768B20026BFAD /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3784392242768B20026BFAD /* DataProvider.swift */; };
+		A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */; };
+		A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A378435F2427471E0026BFAD /* reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37843622427471E0026BFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A37843642427471E0026BFAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A37843662427471E0026BFAD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A37843692427471E0026BFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A378436B242747210026BFAD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A378436E242747210026BFAD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3784370242747210026BFAD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A378437C242750A10026BFAD /* DBModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DBModel.xcdatamodel; sourceTree = "<group>"; };
+		A378437E2427544A0026BFAD /* EntityWithId+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityWithId+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A378437F2427544A0026BFAD /* EntityWithId+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EntityWithId+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A3784387242755EE0026BFAD /* RemindListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindListViewController.swift; sourceTree = "<group>"; };
+		A378438A24275BBA0026BFAD /* RemindListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindListViewModel.swift; sourceTree = "<group>"; };
+		A378438E242766D70026BFAD /* BaseDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataProvider.swift; sourceTree = "<group>"; };
+		A37843902427688A0026BFAD /* RemidDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemidDataProvider.swift; sourceTree = "<group>"; };
+		A3784392242768B20026BFAD /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remind+CoreDataClass.swift"; sourceTree = "<group>"; };
+		A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remind+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,96 @@
 		A37843612427471E0026BFAD /* reminder */ = {
 			isa = PBXGroup;
 			children = (
+				A378437A24274AE10026BFAD /* Resources */,
+				A378437824274A120026BFAD /* Views */,
+				A378437724274A030026BFAD /* Data */,
+				A3784376242749F50026BFAD /* Core */,
 				A37843622427471E0026BFAD /* AppDelegate.swift */,
 				A37843642427471E0026BFAD /* SceneDelegate.swift */,
-				A37843662427471E0026BFAD /* ViewController.swift */,
-				A37843682427471E0026BFAD /* Main.storyboard */,
-				A378436B242747210026BFAD /* Assets.xcassets */,
-				A378436D242747210026BFAD /* LaunchScreen.storyboard */,
 				A3784370242747210026BFAD /* Info.plist */,
 			);
 			path = reminder;
+			sourceTree = "<group>";
+		};
+		A3784376242749F50026BFAD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A378438924275B7B0026BFAD /* ViewModel */,
+				A37843862427556B0026BFAD /* ViewControllers */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A378437724274A030026BFAD /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A378438D242766BC0026BFAD /* Base */,
+				A378438C242766B30026BFAD /* Models */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		A378437824274A120026BFAD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A378437924274A180026BFAD /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A378437924274A180026BFAD /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A378436D242747210026BFAD /* LaunchScreen.storyboard */,
+				A37843682427471E0026BFAD /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A378437A24274AE10026BFAD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A378436B242747210026BFAD /* Assets.xcassets */,
+				A378437B242750A10026BFAD /* DBModel.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A37843862427556B0026BFAD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A3784387242755EE0026BFAD /* RemindListViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A378438924275B7B0026BFAD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A378438A24275BBA0026BFAD /* RemindListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A378438C242766B30026BFAD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */,
+				A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */,
+				A378437E2427544A0026BFAD /* EntityWithId+CoreDataClass.swift */,
+				A378437F2427544A0026BFAD /* EntityWithId+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A378438D242766BC0026BFAD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				A378438E242766D70026BFAD /* BaseDataProvider.swift */,
+				A37843902427688A0026BFAD /* RemidDataProvider.swift */,
+				A3784392242768B20026BFAD /* DataProvider.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +237,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A37843672427471E0026BFAD /* ViewController.swift in Sources */,
+				A378438B24275BBA0026BFAD /* RemindListViewModel.swift in Sources */,
+				A378437D242750A10026BFAD /* DBModel.xcdatamodeld in Sources */,
+				A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */,
+				A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */,
 				A37843632427471E0026BFAD /* AppDelegate.swift in Sources */,
+				A3784388242755EE0026BFAD /* RemindListViewController.swift in Sources */,
+				A37843912427688A0026BFAD /* RemidDataProvider.swift in Sources */,
+				A3784393242768B20026BFAD /* DataProvider.swift in Sources */,
+				A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */,
+				A37843802427544A0026BFAD /* EntityWithId+CoreDataClass.swift in Sources */,
+				A37843812427544A0026BFAD /* EntityWithId+CoreDataProperties.swift in Sources */,
 				A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +446,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A378437B242750A10026BFAD /* DBModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A378437C242750A10026BFAD /* DBModel.xcdatamodel */,
+			);
+			currentVersion = A378437C242750A10026BFAD /* DBModel.xcdatamodel */;
+			path = DBModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = A37843572427471E0026BFAD /* Project object */;
 }
