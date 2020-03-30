@@ -9,9 +9,8 @@
 import Foundation
 import CoreData
 
-class BaseDataProdier{
+class BaseDataProdier {
     lazy var persistentContainer: NSPersistentContainer = {
- 
         let container = NSPersistentContainer(name: "DBModel")
         container.loadPersistentStores(completionHandler: { (storeDescription, error) in
             if let error = error as NSError? {
@@ -25,7 +24,6 @@ class BaseDataProdier{
         do {
                // Save Managed Object Context
                try managedObjectContext.save()
-
            } catch {
                print("Unable to save managed object context.")
            }

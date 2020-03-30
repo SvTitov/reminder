@@ -31,3 +31,12 @@ protocol DataProvider {
      */
     func GetAll() -> [TEntity]
 }
+
+protocol DataPusher {
+    associatedtype TEntity
+    
+    /**
+                Emit data
+     */
+    func push(data: TEntity?) -> Void
+}

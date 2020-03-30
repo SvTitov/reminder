@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30105EC242F922C00893EE3 /* RemindItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30105EB242F922C00893EE3 /* RemindItemSource.swift */; };
+		A359DD3624312989004A5D76 /* AnyDataPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359DD3524312989004A5D76 /* AnyDataPusher.swift */; };
 		A37843632427471E0026BFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843622427471E0026BFAD /* AppDelegate.swift */; };
 		A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843642427471E0026BFAD /* SceneDelegate.swift */; };
 		A378436A2427471E0026BFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37843682427471E0026BFAD /* Main.storyboard */; };
@@ -18,13 +20,16 @@
 		A3784388242755EE0026BFAD /* RemindListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3784387242755EE0026BFAD /* RemindListViewController.swift */; };
 		A378438B24275BBA0026BFAD /* RemindListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378438A24275BBA0026BFAD /* RemindListViewModel.swift */; };
 		A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A378438E242766D70026BFAD /* BaseDataProvider.swift */; };
-		A37843912427688A0026BFAD /* RemidDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843902427688A0026BFAD /* RemidDataProvider.swift */; };
-		A3784393242768B20026BFAD /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3784392242768B20026BFAD /* DataProvider.swift */; };
+		A37843912427688A0026BFAD /* RemindDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843902427688A0026BFAD /* RemindDataProvider.swift */; };
+		A3784393242768B20026BFAD /* DataProvider+DataPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3784392242768B20026BFAD /* DataProvider+DataPusher.swift */; };
 		A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */; };
 		A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */; };
+		A3EDD62B2431184B0091DEE1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EDD62A2431184B0091DEE1 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30105EB242F922C00893EE3 /* RemindItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindItemSource.swift; sourceTree = "<group>"; };
+		A359DD3524312989004A5D76 /* AnyDataPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDataPusher.swift; sourceTree = "<group>"; };
 		A378435F2427471E0026BFAD /* reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37843622427471E0026BFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A37843642427471E0026BFAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,10 +43,11 @@
 		A3784387242755EE0026BFAD /* RemindListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindListViewController.swift; sourceTree = "<group>"; };
 		A378438A24275BBA0026BFAD /* RemindListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindListViewModel.swift; sourceTree = "<group>"; };
 		A378438E242766D70026BFAD /* BaseDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseDataProvider.swift; sourceTree = "<group>"; };
-		A37843902427688A0026BFAD /* RemidDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemidDataProvider.swift; sourceTree = "<group>"; };
-		A3784392242768B20026BFAD /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		A37843902427688A0026BFAD /* RemindDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindDataProvider.swift; sourceTree = "<group>"; };
+		A3784392242768B20026BFAD /* DataProvider+DataPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataProvider+DataPusher.swift"; sourceTree = "<group>"; };
 		A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remind+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remind+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A3EDD62A2431184B0091DEE1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A30105E8242F91DC00893EE3 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				A30105E9242F91E500893EE3 /* TableSources */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		A30105E9242F91E500893EE3 /* TableSources */ = {
+			isa = PBXGroup;
+			children = (
+				A30105EA242F920900893EE3 /* RemindList */,
+			);
+			path = TableSources;
+			sourceTree = "<group>";
+		};
+		A30105EA242F920900893EE3 /* RemindList */ = {
+			isa = PBXGroup;
+			children = (
+				A30105EB242F922C00893EE3 /* RemindItemSource.swift */,
+			);
+			path = RemindList;
+			sourceTree = "<group>";
+		};
 		A37843562427471E0026BFAD = {
 			isa = PBXGroup;
 			children = (
@@ -74,6 +104,7 @@
 		A37843612427471E0026BFAD /* reminder */ = {
 			isa = PBXGroup;
 			children = (
+				A30105E8242F91DC00893EE3 /* Infrastructure */,
 				A378437A24274AE10026BFAD /* Resources */,
 				A378437824274A120026BFAD /* Views */,
 				A378437724274A030026BFAD /* Data */,
@@ -141,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				A378438A24275BBA0026BFAD /* RemindListViewModel.swift */,
+				A3EDD62A2431184B0091DEE1 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -160,8 +192,9 @@
 			isa = PBXGroup;
 			children = (
 				A378438E242766D70026BFAD /* BaseDataProvider.swift */,
-				A37843902427688A0026BFAD /* RemidDataProvider.swift */,
-				A3784392242768B20026BFAD /* DataProvider.swift */,
+				A37843902427688A0026BFAD /* RemindDataProvider.swift */,
+				A3784392242768B20026BFAD /* DataProvider+DataPusher.swift */,
+				A359DD3524312989004A5D76 /* AnyDataPusher.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -240,15 +273,18 @@
 				A378438B24275BBA0026BFAD /* RemindListViewModel.swift in Sources */,
 				A378437D242750A10026BFAD /* DBModel.xcdatamodeld in Sources */,
 				A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */,
+				A3EDD62B2431184B0091DEE1 /* BaseViewModel.swift in Sources */,
 				A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */,
 				A37843632427471E0026BFAD /* AppDelegate.swift in Sources */,
 				A3784388242755EE0026BFAD /* RemindListViewController.swift in Sources */,
-				A37843912427688A0026BFAD /* RemidDataProvider.swift in Sources */,
-				A3784393242768B20026BFAD /* DataProvider.swift in Sources */,
+				A37843912427688A0026BFAD /* RemindDataProvider.swift in Sources */,
+				A3784393242768B20026BFAD /* DataProvider+DataPusher.swift in Sources */,
 				A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */,
+				A359DD3624312989004A5D76 /* AnyDataPusher.swift in Sources */,
 				A37843802427544A0026BFAD /* EntityWithId+CoreDataClass.swift in Sources */,
 				A37843812427544A0026BFAD /* EntityWithId+CoreDataProperties.swift in Sources */,
 				A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */,
+				A30105EC242F922C00893EE3 /* RemindItemSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

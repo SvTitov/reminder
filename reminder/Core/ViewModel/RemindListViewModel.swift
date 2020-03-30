@@ -8,15 +8,12 @@
 
 import Foundation
 import UIKit
+import Combine
 
-public class RemindList : NSObject, UITableViewDataSource {
+public class RemindListViewModel : BaseViewModel  {
+    public var addCommand: ()?
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // TODO: Update with tablewview
-        return 0;
-    }
-    
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+    override func initializeSubscriptions() {
+        
     }
 }

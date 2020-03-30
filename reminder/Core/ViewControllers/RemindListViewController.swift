@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import Combine
 
 class RemindListViewController: UIViewController {
-
+    
+    var dataPusher : AnyDataPusher<Remind>?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    private func saveItem(title: String, description: String) -> Void {
+        
     }
 }
