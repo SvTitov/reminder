@@ -2,7 +2,7 @@
 //  Remind+CoreDataProperties.swift
 //  reminder
 //
-//  Created by Svyatoslav Titov on 22.03.2020.
+//  Created by Svyatoslav Titov on 31.03.2020.
 //  Copyright © 2020 Svyatoslav Titov. All rights reserved.
 //
 //
@@ -17,6 +17,7 @@ extension Remind {
         return NSFetchRequest<Remind>(entityName: "Remind")
     }
 
-    @NSManaged public var descriptionData: String?
+    @NSManaged public var title: String?
+    @NSManaged public var descriptionText: String?
 
 }

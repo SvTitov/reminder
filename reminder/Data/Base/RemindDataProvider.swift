@@ -18,14 +18,15 @@ extension RemindDataProvider : DataProvider {
     typealias TEntity = Remind
       
       func Save(entity: Remind) {
-          let context = self.persistentContainer.viewContext
-          let dbEntity = NSEntityDescription.entity(forEntityName: "Remind", in: context)!
-          let remind = NSManagedObject(entity: dbEntity, insertInto: context)
-          remind.setValue(entity.descriptionData, forKey: "descriptionData")
-          
-            self.push(data: entity)
-        
-          super.Save(managedObjectContext: context)
+        let context = self.persistentContainer.viewContext
+        let dbEntity = NSEntityDescription.entity(forEntityName: "Remind", in: context)!
+        let remind = NSManagedObject(entity: dbEntity, insertInto: context)
+        remind.setValue(entity.descriptionText, forKey: "descriptionText")
+        remind.setValue(entity.title, forKey: "title")
+
+        self.push(data: entity)
+
+        super.Save(managedObjectContext: context)
       }
       
       func Get(predicate: NSPredicate) -> Remind? {

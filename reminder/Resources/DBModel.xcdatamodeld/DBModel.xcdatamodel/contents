@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19E266" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="EntityWithId" representedClassName="EntityWithId" isAbstract="YES" syncable="YES"/>
     <entity name="Remind" representedClassName="Remind" parentEntity="EntityWithId" syncable="YES">
-        <attribute name="descriptionData" optional="YES" attributeType="String"/>
+        <attribute name="descriptionText" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
         <element name="EntityWithId" positionX="-63" positionY="-18" width="128" height="43"/>
-        <element name="Remind" positionX="-45" positionY="9" width="128" height="58"/>
+        <element name="Remind" positionX="-45" positionY="9" width="128" height="73"/>
     </elements>
 </model>
