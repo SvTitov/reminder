@@ -8,7 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		A30105EC242F922C00893EE3 /* RemindItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30105EB242F922C00893EE3 /* RemindItemSource.swift */; };
+		A32ED3FB243A1DDA00CD6C8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32ED3FA243A1DDA00CD6C8F /* Coordinator.swift */; };
 		A359DD3624312989004A5D76 /* AnyDataPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359DD3524312989004A5D76 /* AnyDataPusher.swift */; };
+		A35A15E4243CFAC500C2A83D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A15E3243CFAC500C2A83D /* ApplicationCoordinator.swift */; };
+		A35A15EA243D000A00C2A83D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A15E9243D000A00C2A83D /* Presenter.swift */; };
+		A35A15EC243D002D00C2A83D /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A15EB243D002D00C2A83D /* ApplicationPresenter.swift */; };
+		A369355A246DD53300FD6A86 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3693559246DD53300FD6A86 /* ViewControllerExtensions.swift */; };
+		A369355C246DD92A00FD6A86 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = A369355B246DD92900FD6A86 /* Storyboards.swift */; };
 		A37843632427471E0026BFAD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843622427471E0026BFAD /* AppDelegate.swift */; };
 		A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843642427471E0026BFAD /* SceneDelegate.swift */; };
 		A378436A2427471E0026BFAD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A37843682427471E0026BFAD /* Main.storyboard */; };
@@ -29,7 +35,13 @@
 
 /* Begin PBXFileReference section */
 		A30105EB242F922C00893EE3 /* RemindItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindItemSource.swift; sourceTree = "<group>"; };
+		A32ED3FA243A1DDA00CD6C8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A359DD3524312989004A5D76 /* AnyDataPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDataPusher.swift; sourceTree = "<group>"; };
+		A35A15E3243CFAC500C2A83D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
+		A35A15E9243D000A00C2A83D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		A35A15EB243D002D00C2A83D /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
+		A3693559246DD53300FD6A86 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		A369355B246DD92900FD6A86 /* Storyboards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		A378435F2427471E0026BFAD /* reminder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reminder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A37843622427471E0026BFAD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A37843642427471E0026BFAD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +76,7 @@
 		A30105E8242F91DC00893EE3 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				A32ED3F9243A1CE200CD6C8F /* Navigation */,
 				A30105E9242F91E500893EE3 /* TableSources */,
 			);
 			path = Infrastructure;
@@ -83,6 +96,57 @@
 				A30105EB242F922C00893EE3 /* RemindItemSource.swift */,
 			);
 			path = RemindList;
+			sourceTree = "<group>";
+		};
+		A32ED3F9243A1CE200CD6C8F /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A35A15ED243D129E00C2A83D /* Factories */,
+				A35A15E6243CFFEF00C2A83D /* Presenters */,
+				A35A15E1243CFAA100C2A83D /* Flows */,
+				A35A15E0243CFA9400C2A83D /* Coordinators */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A35A15E0243CFA9400C2A83D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				A32ED3FA243A1DDA00CD6C8F /* Coordinator.swift */,
+				A35A15E3243CFAC500C2A83D /* ApplicationCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		A35A15E1243CFAA100C2A83D /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		A35A15E6243CFFEF00C2A83D /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				A35A15E9243D000A00C2A83D /* Presenter.swift */,
+				A35A15EB243D002D00C2A83D /* ApplicationPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		A35A15ED243D129E00C2A83D /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		A3693558246DD51000FD6A86 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3693559246DD53300FD6A86 /* ViewControllerExtensions.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		A37843562427471E0026BFAD = {
@@ -137,6 +201,7 @@
 		A378437824274A120026BFAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				A3693558246DD51000FD6A86 /* Extension */,
 				A378437924274A180026BFAD /* Storyboards */,
 			);
 			path = Views;
@@ -147,6 +212,7 @@
 			children = (
 				A378436D242747210026BFAD /* LaunchScreen.storyboard */,
 				A37843682427471E0026BFAD /* Main.storyboard */,
+				A369355B246DD92900FD6A86 /* Storyboards.swift */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -270,11 +336,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A35A15EA243D000A00C2A83D /* Presenter.swift in Sources */,
+				A35A15E4243CFAC500C2A83D /* ApplicationCoordinator.swift in Sources */,
+				A32ED3FB243A1DDA00CD6C8F /* Coordinator.swift in Sources */,
 				A378438B24275BBA0026BFAD /* RemindListViewModel.swift in Sources */,
 				A378437D242750A10026BFAD /* DBModel.xcdatamodeld in Sources */,
 				A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */,
+				A369355C246DD92A00FD6A86 /* Storyboards.swift in Sources */,
 				A3EDD62B2431184B0091DEE1 /* BaseViewModel.swift in Sources */,
 				A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */,
+				A369355A246DD53300FD6A86 /* ViewControllerExtensions.swift in Sources */,
 				A37843632427471E0026BFAD /* AppDelegate.swift in Sources */,
 				A3784388242755EE0026BFAD /* RemindListViewController.swift in Sources */,
 				A37843912427688A0026BFAD /* RemindDataProvider.swift in Sources */,
@@ -282,6 +353,7 @@
 				A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */,
 				A359DD3624312989004A5D76 /* AnyDataPusher.swift in Sources */,
 				A37843802427544A0026BFAD /* EntityWithId+CoreDataClass.swift in Sources */,
+				A35A15EC243D002D00C2A83D /* ApplicationPresenter.swift in Sources */,
 				A37843812427544A0026BFAD /* EntityWithId+CoreDataProperties.swift in Sources */,
 				A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */,
 				A30105EC242F922C00893EE3 /* RemindItemSource.swift in Sources */,
