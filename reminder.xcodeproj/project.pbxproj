@@ -9,7 +9,11 @@
 /* Begin PBXBuildFile section */
 		A30105EC242F922C00893EE3 /* RemindItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30105EB242F922C00893EE3 /* RemindItemSource.swift */; };
 		A32ED3FB243A1DDA00CD6C8F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32ED3FA243A1DDA00CD6C8F /* Coordinator.swift */; };
-		A359DD3624312989004A5D76 /* AnyDataPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359DD3524312989004A5D76 /* AnyDataPusher.swift */; };
+		A33BAB8A2471A90E00EC1728 /* ReactiveRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BAB892471A90E00EC1728 /* ReactiveRepository.swift */; };
+		A33BAB8C2471A95500EC1728 /* ReadRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BAB8B2471A95500EC1728 /* ReadRepository.swift */; };
+		A33BAB8F2471B4E900EC1728 /* DataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BAB8E2471B4E900EC1728 /* DataPublisher.swift */; };
+		A33BAB912471BF0F00EC1728 /* DataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33BAB902471BF0F00EC1728 /* DataRepository.swift */; };
+		A359DD3624312989004A5D76 /* AnyDataProdider+AnyDataPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A359DD3524312989004A5D76 /* AnyDataProdider+AnyDataPusher.swift */; };
 		A35A15E4243CFAC500C2A83D /* ApplicationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A15E3243CFAC500C2A83D /* ApplicationCoordinator.swift */; };
 		A35A15EA243D000A00C2A83D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A15E9243D000A00C2A83D /* Presenter.swift */; };
 		A35A15EC243D002D00C2A83D /* ApplicationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35A15EB243D002D00C2A83D /* ApplicationPresenter.swift */; };
@@ -36,7 +40,11 @@
 /* Begin PBXFileReference section */
 		A30105EB242F922C00893EE3 /* RemindItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindItemSource.swift; sourceTree = "<group>"; };
 		A32ED3FA243A1DDA00CD6C8F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		A359DD3524312989004A5D76 /* AnyDataPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDataPusher.swift; sourceTree = "<group>"; };
+		A33BAB892471A90E00EC1728 /* ReactiveRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveRepository.swift; sourceTree = "<group>"; };
+		A33BAB8B2471A95500EC1728 /* ReadRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadRepository.swift; sourceTree = "<group>"; };
+		A33BAB8E2471B4E900EC1728 /* DataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataPublisher.swift; sourceTree = "<group>"; };
+		A33BAB902471BF0F00EC1728 /* DataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepository.swift; sourceTree = "<group>"; };
+		A359DD3524312989004A5D76 /* AnyDataProdider+AnyDataPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AnyDataProdider+AnyDataPusher.swift"; sourceTree = "<group>"; };
 		A35A15E3243CFAC500C2A83D /* ApplicationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationCoordinator.swift; sourceTree = "<group>"; };
 		A35A15E9243D000A00C2A83D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		A35A15EB243D002D00C2A83D /* ApplicationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationPresenter.swift; sourceTree = "<group>"; };
@@ -109,6 +117,33 @@
 			path = Navigation;
 			sourceTree = "<group>";
 		};
+		A33BAB872471A7DD00EC1728 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				A33BAB8D2471B4D600EC1728 /* Publishers */,
+				A33BAB882471A8E900EC1728 /* Protocols */,
+				A33BAB902471BF0F00EC1728 /* DataRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		A33BAB882471A8E900EC1728 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A33BAB892471A90E00EC1728 /* ReactiveRepository.swift */,
+				A33BAB8B2471A95500EC1728 /* ReadRepository.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A33BAB8D2471B4D600EC1728 /* Publishers */ = {
+			isa = PBXGroup;
+			children = (
+				A33BAB8E2471B4E900EC1728 /* DataPublisher.swift */,
+			);
+			path = Publishers;
+			sourceTree = "<group>";
+		};
 		A35A15E0243CFA9400C2A83D /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +203,7 @@
 		A37843612427471E0026BFAD /* reminder */ = {
 			isa = PBXGroup;
 			children = (
+				A33BAB872471A7DD00EC1728 /* Repositories */,
 				A30105E8242F91DC00893EE3 /* Infrastructure */,
 				A378437A24274AE10026BFAD /* Resources */,
 				A378437824274A120026BFAD /* Views */,
@@ -260,7 +296,7 @@
 				A378438E242766D70026BFAD /* BaseDataProvider.swift */,
 				A37843902427688A0026BFAD /* RemindDataProvider.swift */,
 				A3784392242768B20026BFAD /* DataProvider+DataPusher.swift */,
-				A359DD3524312989004A5D76 /* AnyDataPusher.swift */,
+				A359DD3524312989004A5D76 /* AnyDataProdider+AnyDataPusher.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -342,6 +378,7 @@
 				A378438B24275BBA0026BFAD /* RemindListViewModel.swift in Sources */,
 				A378437D242750A10026BFAD /* DBModel.xcdatamodeld in Sources */,
 				A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */,
+				A33BAB912471BF0F00EC1728 /* DataRepository.swift in Sources */,
 				A369355C246DD92A00FD6A86 /* Storyboards.swift in Sources */,
 				A3EDD62B2431184B0091DEE1 /* BaseViewModel.swift in Sources */,
 				A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */,
@@ -351,11 +388,14 @@
 				A37843912427688A0026BFAD /* RemindDataProvider.swift in Sources */,
 				A3784393242768B20026BFAD /* DataProvider+DataPusher.swift in Sources */,
 				A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */,
-				A359DD3624312989004A5D76 /* AnyDataPusher.swift in Sources */,
+				A359DD3624312989004A5D76 /* AnyDataProdider+AnyDataPusher.swift in Sources */,
 				A37843802427544A0026BFAD /* EntityWithId+CoreDataClass.swift in Sources */,
 				A35A15EC243D002D00C2A83D /* ApplicationPresenter.swift in Sources */,
 				A37843812427544A0026BFAD /* EntityWithId+CoreDataProperties.swift in Sources */,
 				A37843652427471E0026BFAD /* SceneDelegate.swift in Sources */,
+				A33BAB8A2471A90E00EC1728 /* ReactiveRepository.swift in Sources */,
+				A33BAB8C2471A95500EC1728 /* ReadRepository.swift in Sources */,
+				A33BAB8F2471B4E900EC1728 /* DataPublisher.swift in Sources */,
 				A30105EC242F922C00893EE3 /* RemindItemSource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
