@@ -34,6 +34,9 @@
 		A3784393242768B20026BFAD /* DataProvider+DataPusher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3784392242768B20026BFAD /* DataProvider+DataPusher.swift */; };
 		A37843962427F61D0026BFAD /* Remind+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */; };
 		A37843972427F61D0026BFAD /* Remind+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */; };
+		A3AE0435248B9CF400CB1BFF /* WeakRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE0434248B9CF400CB1BFF /* WeakRef.swift */; };
+		A3AE0437248B9EEE00CB1BFF /* WeakArray+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE0436248B9EEE00CB1BFF /* WeakArray+Collection.swift */; };
+		A3AE043B248BA8A100CB1BFF /* RemindDataRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3AE043A248BA8A100CB1BFF /* RemindDataRepository.swift */; };
 		A3EDD62B2431184B0091DEE1 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EDD62A2431184B0091DEE1 /* BaseViewModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +70,9 @@
 		A3784392242768B20026BFAD /* DataProvider+DataPusher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataProvider+DataPusher.swift"; sourceTree = "<group>"; };
 		A37843942427F61D0026BFAD /* Remind+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remind+CoreDataClass.swift"; sourceTree = "<group>"; };
 		A37843952427F61D0026BFAD /* Remind+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Remind+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		A3AE0434248B9CF400CB1BFF /* WeakRef.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeakRef.swift; sourceTree = "<group>"; };
+		A3AE0436248B9EEE00CB1BFF /* WeakArray+Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeakArray+Collection.swift"; sourceTree = "<group>"; };
+		A3AE043A248BA8A100CB1BFF /* RemindDataRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindDataRepository.swift; sourceTree = "<group>"; };
 		A3EDD62A2431184B0091DEE1 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -203,6 +209,8 @@
 		A37843612427471E0026BFAD /* reminder */ = {
 			isa = PBXGroup;
 			children = (
+				A3AE0438248BA88200CB1BFF /* DAL */,
+				A3AE0432248B9CBD00CB1BFF /* Common */,
 				A33BAB872471A7DD00EC1728 /* Repositories */,
 				A30105E8242F91DC00893EE3 /* Infrastructure */,
 				A378437A24274AE10026BFAD /* Resources */,
@@ -301,6 +309,39 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		A3AE0432248B9CBD00CB1BFF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE0433248B9CDF00CB1BFF /* WeakReferences */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A3AE0433248B9CDF00CB1BFF /* WeakReferences */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE0434248B9CF400CB1BFF /* WeakRef.swift */,
+				A3AE0436248B9EEE00CB1BFF /* WeakArray+Collection.swift */,
+			);
+			path = WeakReferences;
+			sourceTree = "<group>";
+		};
+		A3AE0438248BA88200CB1BFF /* DAL */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE0439248BA88900CB1BFF /* DataRepositories */,
+			);
+			path = DAL;
+			sourceTree = "<group>";
+		};
+		A3AE0439248BA88900CB1BFF /* DataRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				A3AE043A248BA8A100CB1BFF /* RemindDataRepository.swift */,
+			);
+			path = DataRepositories;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,8 +426,11 @@
 				A369355A246DD53300FD6A86 /* ViewControllerExtensions.swift in Sources */,
 				A37843632427471E0026BFAD /* AppDelegate.swift in Sources */,
 				A3784388242755EE0026BFAD /* RemindListViewController.swift in Sources */,
+				A3AE0435248B9CF400CB1BFF /* WeakRef.swift in Sources */,
+				A3AE043B248BA8A100CB1BFF /* RemindDataRepository.swift in Sources */,
 				A37843912427688A0026BFAD /* RemindDataProvider.swift in Sources */,
 				A3784393242768B20026BFAD /* DataProvider+DataPusher.swift in Sources */,
+				A3AE0437248B9EEE00CB1BFF /* WeakArray+Collection.swift in Sources */,
 				A378438F242766D70026BFAD /* BaseDataProvider.swift in Sources */,
 				A359DD3624312989004A5D76 /* AnyDataProdider+AnyDataPusher.swift in Sources */,
 				A37843802427544A0026BFAD /* EntityWithId+CoreDataClass.swift in Sources */,

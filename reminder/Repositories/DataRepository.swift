@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import Combine
 
 public class DataRepository<TType> : ReadRepository {
     
     var dataProvider: AnyDataProvider<TType>
+    
+    private var subscriptions: [AnySubscriber<Any, Error>] = []
     
     init(_ dataProvider : AnyDataProvider<TType>) {
         self.dataProvider = dataProvider
