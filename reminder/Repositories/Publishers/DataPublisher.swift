@@ -28,5 +28,4 @@ public class DataPublisher<TType> : Publisher where TType : Any {
             //TODO think
         }
     }
-    
 }

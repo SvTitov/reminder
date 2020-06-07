@@ -17,8 +17,12 @@ public class RemindListViewModel : BaseViewModel  {
     // MARK: - fields
     private var dataProvider = RemindDataProvider()
     
+    @Published var totalItemsCount: String?
+    
     // MARK: - commands
     public private(set) var addCommand: (() -> ())?
+    
+    public private(set) var loadCommand: (() -> ())?
     
     // MARK: - properties
     public var title: String?
@@ -28,7 +32,7 @@ public class RemindListViewModel : BaseViewModel  {
     override init() {
         super.init()
         self.addCommand = add.self
-        
+        self.loadCommand = load.self
     }
     
     deinit {
@@ -43,7 +47,7 @@ public class RemindListViewModel : BaseViewModel  {
     
     // MARK: - methods
     private func add() {
-        let remind = Remind()
+        let remind = Remind(context: dataProvider.persistentContainer.viewContext)
         
         guard let unwrapperTitle = title, let unwrapperDescription = description else {
             return
@@ -55,7 +59,21 @@ public class RemindListViewModel : BaseViewModel  {
         dataProvider.Save(entity: remind)
     }
     
+    private func load(){
+        testMethod()
+    }
+    
     private func onAddNewItem(entity: Remind) -> Void {
         //TODO: reload list
+    }
+    
+    
+    private func testMethod() {
+        let remindDataProvider = AnyDataProvider<Remind>(provider: self.dataProvider)
+        let dataRepository = RemindDataRepository(remindDataProvider)
+        
+        _ = dataRepository.getAll()
+            .subscribe(on: DispatchQueue.global(qos: .background))
+            .sink(receiveCompletion: { print($0) }, receiveValue: { self.totalItemsCount = "Count of items: \($0.count)" })
     }
 }

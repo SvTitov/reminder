@@ -45,9 +45,19 @@ extension RemindDataProvider : DataProvider {
           return nil
       }
       
-      func GetAll() -> [Remind] {
-          return [Remind]()
-      }
+    func GetAll() -> [Remind] {
+        let context = self.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "Remind")
+        
+        do {
+            let items = try context.fetch(fetchRequest)
+            return (items as! [Remind])
+        } catch {
+            print("Error while fetching data!")
+        }
+        
+        return []
+    }
 }
 
 extension RemindDataProvider : DataPusher {

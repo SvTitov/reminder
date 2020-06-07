@@ -8,6 +8,6 @@
 
 import Foundation
 
-public class ReminDataRepository: DataRepository<Remind> {
+public class RemindDataRepository: DataRepository<Remind> {
     
 }

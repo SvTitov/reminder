@@ -7,9 +7,12 @@
 //
 
 import Foundation
+import Combine  
 
 public protocol ReadRepository {
     associatedtype TType
     
     func get(predicate: NSPredicate) -> DataPublisher<TType>
+    
+    func getAll() -> AnyPublisher<[TType], Never>
 }

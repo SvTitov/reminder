@@ -10,10 +10,10 @@ import Foundation
 import Combine
 
 public class DataRepository<TType> : ReadRepository {
+ 
+    private var dataProvider: AnyDataProvider<TType>
     
-    var dataProvider: AnyDataProvider<TType>
-    
-    private var subscriptions: [AnySubscriber<Any, Error>] = []
+    private var subscriptions: WeakArray<AnyObject> = WeakArray<AnyObject>([])
     
     init(_ dataProvider : AnyDataProvider<TType>) {
         self.dataProvider = dataProvider
@@ -23,5 +23,19 @@ public class DataRepository<TType> : ReadRepository {
     
     public func get(predicate: NSPredicate) -> DataPublisher<TType> {
         return DataPublisher<TType>(dataProvider.Get(predicate: predicate))
+    }
+    
+    public func getAll() -> AnyPublisher<[TType], Never> {
+        return getAllFromDataProvider()
+            .eraseToAnyPublisher()
+     }
+    
+    private func getAllFromDataProvider() -> Future<[TType], Never> {
+        return Future { promise in
+            DispatchQueue.global().async {
+                let allData = self.dataProvider.GetAll()
+                promise(.success(allData))
+            }
+        }
     }
 }

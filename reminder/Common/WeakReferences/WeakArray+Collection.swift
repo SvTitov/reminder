@@ -14,6 +14,10 @@ public struct WeakArray<TType: AnyObject> {
     init(_ elements: [TType]) {
         self.items = elements.map { WeakRef($0) }
     }
+    
+    public mutating func append(_ item: TType){
+        items.append(WeakRef(item))
+    }
 }
 
 extension WeakArray: Collection {
